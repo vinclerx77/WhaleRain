@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="stylesheet" href="style.css">
+  <title>VPN e Apostas Online: o que você precisa saber</title>
+  
+  <!-- SEO e Redes Sociais -->
+  <meta name="description" content="Conteúdo informativo e educativo sobre regulamentação de apostas no Brasil, funcionamento técnico de uma VPN e os riscos de usá-la em plataformas de apostas.">
+  <meta property="og:title" content="VPN e Apostas Online: o que você precisa saber">
+  <meta property="og:description" content="Regulamentação, funcionamento técnico e riscos. Conteúdo informativo, sem incentivo ao uso de VPN.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- Barra de progresso de rolagem -->
+  <div id="prog"></div>
+
+  <!-- Cabeçalho Principal -->
+  <header>
+    <div class="wrap">
+      <nav id="nav" aria-label="Seções"></nav>
+      <div class="tools">
+        <button class="btn ghost" id="fm" aria-label="Diminuir fonte">A−</button>
+        <button class="btn ghost" id="fp" aria-label="Aumentar fonte">A+</button>
+        <button class="btn ghost" id="sh" aria-label="Compartilhar">⤴<span>&nbsp;Compartilhar</span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Seção Hero / Destaque inicial -->
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <span class="tag" id="h-tag"></span>
+        <h1 id="h-t"></h1>
+        <p class="lead" id="h-s"></p>
+        <a class="btn" href="#slides">Saiba mais</a>
+      </div>
+    </section>
+
+    <!-- Seção do Carrossel de Slides -->
+    <section id="slides">
+      <div class="wrap">
+        <h2 class="rv">Entenda<span>em 6 slides</span></h2>
+        <div id="car" class="rv" role="region" aria-roledescription="carrossel" aria-label="Slides informativos" tabindex="0">
+          <div class="stage">
+            <div class="track" id="track"></div>
+          </div>
+          <div class="segs" id="segs"></div>
+          <div class="cbar">
+            <span id="cnt" aria-live="polite"></span>
+            <div>
+              <button class="btn ghost" id="ap" aria-pressed="false">Autoplay: off</button>
+              <button class="btn ghost round" id="pv" aria-label="Slide anterior">‹</button>
+              <button class="btn ghost round" id="nx" aria-label="Próximo slide">›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Mitos e Verdades (Cards com efeito flip) -->
+    <section id="mitos">
+      <div class="wrap">
+        <h2 class="rv">Mitos<span>e verdades</span></h2>
+        <p class="lead rv">Toque em um cartão para ver a resposta.</p>
+        <div class="grid" id="mv"></div>
+      </div>
+    </section>
+
+    <!-- Seção Explicativa sobre o Funcionamento da VPN -->
+    <section id="vpn">
+      <div class="wrap">
+        <h2 class="rv">Como a VPN<span>funciona</span></h2>
+        <p class="lead rv">Visão geral do caminho dos dados quando uma VPN está ativa.</p>
+        
+        <!-- Fluxograma visual da conexão -->
+        <div class="flow rv" aria-label="Diagrama: dispositivo, túnel criptografado, servidor VPN, internet">
+          <div class="card node">Dispositivo<small>Origem da conexão</small></div>
+          <div class="pipe enc"><i></i></div>
+          <div class="card node tun">Túnel criptografado<small>Dados cifrados</small></div>
+          <div class="pipe enc"><i></i></div>
+          <div class="card node">Servidor VPN<small>Intermediário externo</small></div>
+          <div class="pipe"><i></i></div>
+          <div class="card node">Internet<small>Site de destino</small></div>
+        </div>
+
+        <div class="two rv">
+          <div class="card">
+            <h3>O provedor de internet vê</h3>
+            <ul>
+              <li>Que há uma conexão cifrada ativa</li>
+              <li>O endereço do servidor VPN</li>
+              <li>O volume e o horário do tráfego</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>O provedor de internet não vê</h3>
+            <ul>
+              <li>O conteúdo do tráfego cifrado</li>
+              <li>O destino final de cada requisição</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seção WhaleRain (produto) -->
+    <section id="whalerain">
+      <div class="wrap">
+        <h2 class="rv">Sua conexão. Sua localização.<span>Seu acesso.</span><span>Sua liberdade.</span></h2>
+        <p class="lead rv">Imagine abrir a plataforma e navegar como se a sua conexão estivesse em outro lugar.</p>
+        <p class="lead rv">A WhaleRain é a unica VPN no mundo capaz de permitir o acesso a casa de apostas bloqueadas independente da lei interna do país, você escolhe uma localização virtual e estabelece a conexão por ela — uma navegação mais flexível, privada e fluida.</p>
+
+        <div class="feat">
+          <article class="card rv"><span class="num">01</span><h3>Privacidade</h3><p>Sua conexão passa por um servidor intermediário, ajudando a proteger sua identidade online.</p></article>
+          <article class="card rv"><span class="num">02</span><h3>Localização virtual</h3><p>Escolha entre as localizações disponíveis e navegue com um endereço IP diferente.</p></article>
+          <article class="card rv"><span class="num">03</span><h3>Conexão rápida</h3><p>Feita para quem quer conectar e começar a navegar sem etapas desnecessárias.</p></article>
+          <article class="card rv"><span class="num">04</span><h3>Experiência simples</h3><p>Menos passos entre você e a casa de aposta que deseja acessar.</p></article>
+        </div>
+
+        <div class="wr-cta rv">
+          <h3>Sua Liberdade, do seu jeito.</h3>
+          <p>Conecte. Escolha sua localização. Divirta-se.</p>
+          <a class="btn" href="https://syncpaycheckout.com/checkout/a2de12db-ea08-43f7-9ac6-08363f8d55c5+a2df9dd4-3301-413e-b426-64df532ec87e">Faça parte da WhaleRain <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Jogo Responsável -->
+    <section id="jogo" class="resp">
+      <div class="wrap">
+        <h2 class="rv">Jogo<span>responsável</span></h2>
+        <div class="grid">
+          <div class="card rv">
+            <h3>Sinais de alerta</h3>
+            <ul id="sinais"></ul>
+          </div>
+          <div class="card rv">
+            <h3>Ferramentas</h3>
+            <ul id="ferr"></ul>
+          </div>
+        </div>
+        <p class="alert"><b>Apostas são proibidas para menores de 18 anos.</b></p>
+      </div>
+    </section>
+
+    <!-- Seção Perguntas Frequentes (FAQ) -->
+    <section id="faq">
+      <div class="wrap">
+        <h2 class="rv">Perguntas<span>frequentes</span></h2>
+        <div id="fq"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="wrap">
+      <p><b>18+  • Jogue com responsabilidade.</b></p>
+    </div>
+  </footer>
+
+  <!-- Avisos Fixos na Tela -->
+  <div class="fixed18">18+ • Jogue com responsabilidade.</div>
+  <!-- Vinculação do arquivo de script (Lógica JS) -->
+  <script src="script.js"></script>
+</body>
+</html>
